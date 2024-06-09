@@ -22,7 +22,9 @@ mongo.connect(url1,{useNewUrlParser:true,useUnifiedTopology:true},
   });
   var sch={
     name: String,
-    email:String,
+    count: int,
+    price : int
+    details:String,
     id:Number
 }
   const mongomodel = new mongo.model('newcols',sch);
